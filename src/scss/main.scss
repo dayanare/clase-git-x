@@ -1,0 +1,58 @@
+/*@import 'core/variables';
+@import 'core/reset';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index';
+*/
+
+@import 'core/reset';
+
+:root {
+    --blue-green: #099d8d;
+    --aqua: #14d9c4;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/header-background-2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.header .title {
+    height: 60px;
+    text-transform: uppercase;
+    opacity: 0.95;
+    background-color: var(--blue-green);
+    color: white;
+}
+
+.main_menu {
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: var(--aqua);
+    opacity: 0.9;
+}
+
+.main_menu .menu_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.hero {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 2em;
+    transform: translateY(-50%);
+    background-color: white;
+}
